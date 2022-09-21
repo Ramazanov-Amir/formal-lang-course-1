@@ -12,7 +12,7 @@ def minimum_dfa_by_regex(regex: Regex):
 
 
 def ndfa_by_graph(
-        graph: MultiGraph, start_nodes: Set[int] = None, final_nodes: Set[int] = None
+    graph: MultiGraph, start_nodes: Set[int] = None, final_nodes: Set[int] = None
 ):
     nfa = NondeterministicFiniteAutomaton()
 
@@ -33,4 +33,3 @@ def ndfa_by_graph(
             nfa.add_final_state(State(state))
 
     return nfa
-
