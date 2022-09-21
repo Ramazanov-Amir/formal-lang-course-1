@@ -33,3 +33,4 @@ def ndfa_by_graph(
             nfa.add_final_state(State(state))
 
     return nfa
+
